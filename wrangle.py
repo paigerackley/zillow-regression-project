@@ -118,11 +118,9 @@ def wrangle_zillow():
     df["bedroomcnt"] = df["bedroomcnt"].astype(int)    
     df["taxvaluedollarcnt"] = df["taxvaluedollarcnt"].astype(int)
     df["calculatedfinishedsquarefeet"] = df["calculatedfinishedsquarefeet"].astype(int)
-    df = df.dropna()
 
     # readability
     df = df.rename(columns={'calculatedfinishedsquarefeet': 'square_feet'}) 
-
 
     # Eliminate the funky values
     df = df[df['square_feet'] > 400]
@@ -140,10 +138,13 @@ def wrangle_zillow():
     df['fips_name'] = np.where(df.fips == 6037, 'Los Angeles', np.where(df.fips == 6059, 'Orange','Ventura') )
     df = df.drop(columns = 'fips')
 
+# Make dummies df for non-binary variables, fips_name is now an object
+    dummy_df = pd.get_dummies(df[['fips_name']], dummy_na=False, \
+                              drop_first=True)
+    # Concat dummy to original
+    df = pd.concat([df, dummy_df], axis=1)
 
     return df
-
-
 
 
 ###### All Together #######

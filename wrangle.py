@@ -110,6 +110,7 @@ def wrangle_zillow():
     df = get_zillow_data()
 
     # Drop all nulls from dataset
+    df = df.dropna()
     # Convert some columns to integers
     # fips, yearbuilt, and bedrooms can be integers
     df["fips"] = df["fips"].astype(int)
@@ -139,29 +140,6 @@ def wrangle_zillow():
     df['fips_name'] = np.where(df.fips == 6037, 'Los Angeles', np.where(df.fips == 6059, 'Orange','Ventura') )
     df = df.drop(columns = 'fips')
 
-
-        # This part is needed since we are now joining predicitons_2017 
-    include_zip = kwargs.get('include_zip',True)
-    if include_zip == False:
-        #drop zipcode column
-        df.drop(columns=['zipcode'],inplace=True)
-        #split data
-        train, test, validate = splitData(df,**kwargs)
-        return train, test, validate
-    else:
-        #DROP rows with less than 30 parcels in the same zipcode
-        #get counts per zip
-        zip_cnt = df.zipcode.value_counts()
-        #get subset of zipcodes that should be dropped
-        drp_zips = zip_cnt[zip_cnt < 30].index
-        #drop those
-        df = df[df.zipcode.isin(drp_zips)==False]
-
-        #encode zip and return large df
-        #encode into dummy df
-        dz_df = pd.get_dummies(df['zipcode'],drop_first=True)
-        #concat dummy df to the rest
-        df = pd.concat([df,dz_df],axis=1)
 
     return df
 

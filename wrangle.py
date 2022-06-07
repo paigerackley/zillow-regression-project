@@ -26,13 +26,13 @@ def get_zillow_data():
 def get_new_zillow_data():
     """Returns a dataframe of all 2017 properties that are Single Family Residential"""
 
-    db_name= 'zillow'
+    db_name = 'zillow'
     filename='zillow.csv'
     sql = """
-    SELECT bedroomcnt as bed,
-        bathroomcnt as bath, 
-        calculatedfinishedsquarefeet as sf, 
-        taxvaluedollarcnt as value, 
+    SELECT bedroomcnt,
+        bathroomcnt, 
+        calculatedfinishedsquarefeet, 
+        taxvaluedollarcnt, 
         yearbuilt, 
         regionidzip as zipcode, 
         fips

@@ -1,4 +1,4 @@
-# <center><a name="top"></a>Classification Project: Telco Churn 
+# <center><a name="top"></a>Regression Project: Zillow Property Values
 ![](images/telco.jpeg)
 
 by: Paige Rackley </center>

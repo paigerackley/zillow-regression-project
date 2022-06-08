@@ -21,7 +21,6 @@ ___
 
 
 ## <a name="project_description"></a>Project Description:
-## Project Description:
 
 We are wanting to gather data to create a new model to predict property values. We have one currently that we would like to improve upon and use our data as a tool to help us find trends that can help our predictions. At Zillow, this data is important because our customers need to be able to trust that we can give them accurate predictions for value.
 

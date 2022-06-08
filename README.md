@@ -47,6 +47,7 @@ We are wanting to gather data to create a new model to predict property values. 
 > - A final report notebook
 > - A final report notebook presentation
 > - All necessary modules to make my project reproducible
+> - Workbooks that were used while going through the steps to create my model
 
 
         

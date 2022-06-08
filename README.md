@@ -1,5 +1,5 @@
 # <center><a name="top"></a>Regression Project: Zillow Property Values
-![](images/telco.jpeg)
+![](https://github.com/paigerackley/zillow-regression-project/blob/main/images/house%20clip%20art.png)
 
 by: Paige Rackley </center>
 

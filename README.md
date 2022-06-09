@@ -37,7 +37,7 @@ We are wanting to gather data to create a new model to predict property values. 
   
   
  ### Business Goals: 
- > - 
+ > - As a junior Data Scientist, my goals are to use the data I have to create a ML Regression model that beats our current model on predicting property value. I want to be able to zero in on potential factors that I find correlate most to predicting these values, as it is very important to our company to be trustworthy with the information we provide our customers. 
 
  ### Audience:
 > - My audience is the Zillow data science team. 

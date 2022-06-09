@@ -65,6 +65,19 @@ We are wanting to gather data to create a new model to predict property values. 
 
 ### Data Used
 
+Target|Datatype|Definition|
+|:-------|:--------|:----------|
+| taxvaluedollarcnt | int64 | final home estimated price |
+
+|Feature|Datatype|Definition|
+|:-------|:--------|:----------|
+| bedroomcnt       | int64 |    number of bedrooms |
+| bathroomcnt        | float64 |    number of bathrooms |
+| square_feet       | int64 |    total square feet of home |
+| year_built        | int64 |    year home was built |
+| taxamount       | float64 |    tax amount |
+| fips_name        | int64 |    name of county home is in |
+
 ***
 
 ## <a name="wrangle"></a>Data Acquisition and Preparation

@@ -40,7 +40,7 @@ We are wanting to gather data to create a new model to predict property values. 
  > - 
 
  ### Audience:
-> - 
+> - My audience is the Zillow data science team. 
   
   
  ### Deliverables:

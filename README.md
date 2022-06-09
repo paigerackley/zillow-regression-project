@@ -37,22 +37,25 @@ We are wanting to gather data to create a new model to predict property values. 
   
   
  ### Business Goals: 
- > - 
+ > - As a junior Data Scientist, my goals are to use the data I have to create a ML Regression model that beats our current model on predicting property value. I want to be able to zero in on potential factors that I find correlate most to predicting these values, as it is very important to our company to be trustworthy with the information we provide our customers. 
 
  ### Audience:
-> - 
+> - My audience is the Zillow data science team. 
   
   
  ### Deliverables:
 > - A final report notebook
 > - A final report notebook presentation
-> - All necessary modules to make my project reproducible
 > - Workbooks that were used while going through the steps to create my model
 
 
         
-### Initial Hypothesis: 
-
+### Initial Hypothesis/Questions: 
+    -> Does bathroom and bedroom count help predict the property value?
+    -> Why do some properties relatively close to eachother value differently? What are the other attributes to this?
+  -> Is there a relationship between the year built and property value?
+  -> Does the county dictate property value?
+  
 ## Hypothesis:
   
 
@@ -65,6 +68,19 @@ We are wanting to gather data to create a new model to predict property values. 
 [[Back to top](#top)]
 
 ### Data Used
+
+Target|Datatype|Definition|
+|:-------|:--------|:----------|
+| taxvaluedollarcnt | int64 | final home estimated price |
+
+|Feature|Datatype|Definition|
+|:-------|:--------|:----------|
+| bedroomcnt       | int64 |    number of bedrooms |
+| bathroomcnt        | float64 |    number of bathrooms |
+| square_feet       | int64 |    total square feet of home |
+| year_built        | int64 |    year home was built |
+| taxamount       | float64 |    tax amount |
+| fips_name        | int64 |    name of county home is in |
 
 ***
 

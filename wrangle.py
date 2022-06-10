@@ -33,6 +33,7 @@ def get_new_zillow_data():
         bathroomcnt, 
         calculatedfinishedsquarefeet, 
         taxvaluedollarcnt, 
+        taxamount,
         yearbuilt, 
         regionidzip as zipcode, 
         fips

@@ -81,6 +81,8 @@ Target|Datatype|Definition|
 | year_built        | int64 |    year home was built |
 | taxamount       | float64 |    tax amount |
 | fips_name        | int64 |    name of county home is in |
+| propertylandusetypeid | int64 | property land use id |
+| parcelid | int64 | parcel id
 
 ***
 

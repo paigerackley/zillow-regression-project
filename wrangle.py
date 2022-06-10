@@ -71,7 +71,7 @@ def train_validate_test_split(df, seed=123):
 def scale_data(train, 
                validate, 
                test, 
-               columns_to_scale=['bedroomcnt', 'bathroomcnt', 'taxvaluedollarcnt', 'square_feet']):
+               columns_to_scale=['bedroomcnt', 'bathroomcnt', 'square_feet']):
     '''
     Scales the 3 data splits. 
     Takes in train, validate, and test data splits and returns their scaled counterparts.

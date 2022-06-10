@@ -51,10 +51,10 @@ We are wanting to gather data to create a new model to predict property values. 
 
         
 ### Initial Hypothesis/Questions: 
-    -> Does bathroom and bedroom count help predict the property value?
-    -> Why do some properties relatively close to eachother value differently? What are the other attributes to this?
-  -> Is there a relationship between the year built and property value?
-  -> Does the county dictate property value?
+ > - Does bathroom and bedroom count help predict the property value?
+ > - Why do some properties relatively close to eachother value differently? What are the other attributes to this?
+ > - Is there a relationship between the year built and property value?
+ > - Does the county dictate property value?
   
 ## Hypothesis:
   

@@ -182,8 +182,6 @@ After testing Polynomial using test, we get a result of Test:  436046.3117047775
 ####
 
 
-### Recommendations:
-
 - Focus on the square feet, bedroom and bathroom count when attempting to predict property value.
 
 - When attempting to predict, because the zip codes seem to have big differences in overall tax value, it may be best to focus on one zip at a time.
@@ -193,5 +191,5 @@ After testing Polynomial using test, we get a result of Test:  436046.3117047775
   
   **How to Reproduce**
 - [x] Read this README.md
-- [ ] 
+- [ ] Use the functions I have created that are contained in my wrange.py
 - [ ] Have fun doing your own exploring, modeling, and more! 

@@ -191,5 +191,6 @@ After testing Polynomial using test, we get a result of Test:  436046.3117047775
   
   **How to Reproduce**
 - [x] Read this README.md
-- [ ] Use the functions I have created that are contained in my wrange.py
+- [ ] You will need the env.py, with credentials, that will allow you into the Codeup SQL Databases. (I recommend also creating a .gitgnore for this step and store your env.py credentials in it. You don't want your credentials viewable for the whole world if you decide to share your findings!)
+- [ ] Use the functions I have created that are contained in my wrangle.py
 - [ ] Have fun doing your own exploring, modeling, and more! 
